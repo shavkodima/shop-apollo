@@ -1,14 +1,9 @@
 import './App.css';
-import {
-  ApolloProvider,
-  InMemoryCache,
-  ApolloClient,
-  gql,
-} from '@apollo/client';
+import { ApolloProvider, InMemoryCache, ApolloClient } from '@apollo/client';
 import AppController from './AppController/AppController';
 
 const client = new ApolloClient({
-  uri: '',
+  uri: 'http://localhost:3000/',
   cache: new InMemoryCache(),
 });
 
